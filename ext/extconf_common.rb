@@ -31,3 +31,6 @@ DESC
 end
 
 $CFLAGS << " -DSWIG_TYPE_TABLE=taglib"
+
+CONFIG['warnflags'].gsub!('-Wdeclaration-after-statement', '')
+CONFIG['warnflags'].gsub!('-Wimplicit-function-declaration', '')
